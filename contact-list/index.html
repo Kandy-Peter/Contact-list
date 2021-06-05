@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="clm clm1">
+            <!--headrer s1-->
+            
+            <div class="logo">
+              <h1>TouchApp</h1>
+            </div>
+            
+            <nav>
+              <input type="checkbox" id="check">
+            <label for="check" class="checkmenu"><i class="fas fa-bars"></i></label>
+              <ul>
+                
+                <a href="index.html"><li><i class="fas fa-home"></i>Home</li></a>
+                <a href="about/about.html"><li><i class="fas fa-user"></i>About</li></a>
+                <a href="profil/profil.html"><li><i class="fas fa-user"></i>Profil</li></a>
+                <a href="login/login.html" class="login-link">login</a>
+                <a href='#' class="logOut" id="logOut">Log Out</a>
+              </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+      <div class="clm clm2">
+            <div class="form form-container">
+                  <div class="form form-inputs">
+                    <div class="left-inputs">
+                      <div class="input-photo">
+                        <input type="file" accept='image/*'name="image" id="inputFile" onchange="loadFile(event)"
+                        style="display: none;" >
+                        
+                        <img id="upload">
+                        <label for="inputFile"><i class="fas fa-edit"></i></label>
+                      </div>
+                    </div>
+                    <div class="right-inputs"> 
+                      <h2 class="title-h2">Add New Contact</h2> 
+                      <div class="inputs name">
+                        <label for="inputName"><i class="fas fa-user"></i></label>
+                        <input placeholder="Name..." class="form-control" id="inputName" />
+                      </div>
+                      <div class="inputs mail">
+                        <label for="inputEmail"><i class="fas fa-envelope"></i></label>
+                        <input placeholder="Email Address..." class="form-control" id="inputEmail" />
+                      </div>
+                      <div class="inputs phone">
+                        <label for="inputPhone"><i class="fas fa-phone"></i></label>
+                        <input placeholder="Phone Number..." class="form-control" id="inputPhone" />
+                      </div>
+                      <div class="inputs adress">
+                        <label for="inputAdress"><i class="fas fa-house-user"></i></label>
+                        <input type="text" placeholder="Adress..." class="form-control" id="inputAdress">
+                      </div>
+
+                      <div id="submitButtons btn"><button type="button" class="btn btn-info" onclick="addNewContact()">Submit</button></div>
+                    </div>
+                  </div>
+            </div>
+        
+      </div>
+      <div class="clm clm3">
+        <!--All contacts-->
+        <div class="min-title"><h3>My Contacts</h3></div>
+        <div id="displayContacts" class="contact-cards">
+    
+        </div>
+      </div>
+      
+    </main>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

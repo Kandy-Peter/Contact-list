@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+body{
+    background: url('../image/background_img.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/*---header---*/
+header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    box-shadow:  2px 5px 5px rgba(129, 129, 129, 0.74);
+}
+.clm{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+}
+.container-row{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 10px;
+}
+.logo h1{
+    font-size: 40px;
+    font-family: 'New Rocker', cursive;;
+}
+nav ul li{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 14px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+nav ul li:hover{
+    font-size: 18px;
+    border-bottom: 4px solid #000;
+    transition: .6s;
+}
+nav ul a{
+    color: #000;
+    padding: 14p;
+}
+nav ul a:hover .links{
+    display: block;
+}
+.clm1{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .fas{
+    margin-right: 5px;
+}
+.login-link{
+    background-color: #fff;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 8px 28px;
+   margin-left: 10px; 
+   margin-right: 10px;
+   border: 2px solid#000;
+}
+.login-link:hover{
+    background-color: #000;
+    color: #fff;
+}
+.logOut{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+   margin: 0 10px;
+}
+.logOut:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000
+}
+.checkmenu{
+    font-size: 40px;
+    color: #000;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*---section---*/
+section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.container{
+    background-color: #fff;
+    box-shadow: 2px 5px 5px 5px #7e7e7e;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+/*--userprofil--*/
+.userprofil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 420px;
+}
+.profil-photo{
+    height: 350px;
+    width: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    display:flex; justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#photo{
+ width: 200px;
+ height: 200px;
+ border: 2px solid rgb(0, 0, 0);
+ border-radius: 50%;
+ margin-bottom: 20px;
+}
+#file{
+     display:none;
+}
+#upload .fas{
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+}
+
+/*----user info---*/
+.container .userinfo{
+    flex:1;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr;
+    margin: auto;
+    padding-right: 20px;
+}
+h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.id{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+input{
+    border: none;
+    background-color: none;
+    outline: none;
+    margin-left: 7px;
+}
+.update-save{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: px;
+    display: flex;
+}
+button{
+    width: 200px;
+    text-align: center;
+    height: 45px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    transition: all .5s;
+}
+
+@media screen and (max-width: 950px){
+    body{
+        background-repeat: repeat;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .checkmenu{
+        display: block;
+    }
+    .fa-bars{
+        font-size: 25px;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #474747;
+        color: white;
+        top: 63px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow-y: scroll;
+    }
+    nav ul li, .logOut{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+        line-height: 30px;
+
+    }
+    nav ul li:hover{
+        border-bottom: none;
+        color: rgb(192, 192, 192);
+    }
+    .login-link{
+        border: none;
+        background-color: none;
+        
+    }
+    .logOut{
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        padding: 10px 20px;
+        margin: 20px auto;
+        border-radius: 0px;
+        
+    }
+    .logOut:hover{
+        
+        color: #000;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 80%;
+    }
+    .container .userinfo{
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;        
+     }
+    .container .userinfo form{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+    h2{
+        font-size: 30px;
+        margin-bottom: 7px;
+    }
+    /*--photo--*/
+    .userprofil{
+        width: 250px;
+        height: 190px;
+    }
+    #photo{
+     width: 100px;
+     height: 100px;
+     border: 1px solid grey;
+     border-radius: 50%;
+     margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 650px){
+    .userinfo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+    .update-save{
+        margin-top: 10px;
+    }
+}

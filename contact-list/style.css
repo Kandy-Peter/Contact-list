@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background: url("image/background_img.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    box-shadow:  2px 3px 3px rgba(129, 129, 129, 0.74);
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.clm{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.logo{
+    padding: 10px;
+}
+.logo h1{
+    font-size: 40px;
+    font-family: 'New Rocker', cursive;;
+}
+nav ul li{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 14px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+nav ul li:hover{
+    font-size: 18px;
+    border-bottom: 4px solid #000;
+    transition: .6s;
+}
+nav ul a{
+    color: #000;
+}
+nav ul a:hover .links{
+    display: block;
+}
+.clm1{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .fas{
+    margin-right: 5px;
+}
+.login-link{
+    background-color: #fff;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 8px 28px;
+   margin-left: 10px; 
+   margin-right: 10px;
+   border: 2px solid#000;
+}
+.login-link:hover{
+    background-color: #000;
+    color: #fff;
+}
+.logOut{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+   margin-left: 10px;
+}
+.logOut:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000
+}
+.checkmenu{
+    font-size: 40px;
+    color: #000;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*---second column main----*/
+
+/*--formular*/
+.clm2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    box-shadow: 0px 10px 10px #61616175;
+}
+.form-inputs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.left-inputs{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-photo img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    background: url("image/default-profil.jpg") no-repeat;
+    background-size: cover;
+}
+.right-inputs{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-areas: 1fr 1fr 1fr 1fr ;
+    grid-gap: 2rem;
+    grid-template-areas:
+    "title-h2 title-h2 title-h2 title-h2"
+    "name name phone phone"
+    "mail mail adress adress"
+    "btn btn . .";
+    padding: 3rem;
+    justify-items: center;
+    align-content: center;
+}
+h2{
+    grid-area: title-h2;
+    font-size: 23px;
+}
+.name { grid-area: name; }
+.phone { grid-area: phone; }
+.mail { grid-area: mail;}
+.adress { grid-area: adress; }
+.right-inputs .btn {
+     grid-area: btn;
+     margin-left: 1rem;
+     width: 200px;
+     height: 45px;
+     background-color: rgb(32, 32, 32);
+     color: white;
+     border: none;
+     outline: none;
+}
+.right-inputs .btn:hover{
+    width: 220px;
+    transform:translate(all .5s);
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;padding: 0.5rem;
+    border-bottom: 2px solid rgb(29, 29, 29);
+}
+input{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    margin-left: 0.4rem;
+}
+/*-----photo--------------------------------------*/
+
+
+#photo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+.photoContact img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/*--end--*/
+
+
+/*---contacts----*/
+.clm3{
+    display: flex;
+    flex-direction: column;
+}
+.clm3 h3{
+    font-size: 25px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.contact-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 1rem 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0px 10px 10px #9b9999;
+}
+/*card design-----*/
+
+.photoContact{
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1rem;
+}
+.photoContact img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px #9b9999;
+}
+
+#photo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+.head-name li{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(0, 81, 134);
+    font-weight: bold;
+    padding-bottom: 0.5rem ;
+}
+.middle{
+    flex: 1;
+    overflow: scroll;
+}
+.middle::-webkit-scrollbar{
+    display: none;
+}
+.middle li{
+    font-size: 14px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    height: 3rem;
+    margin-top: 1rem;
+}
+.buttons li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.buttons li button{
+    margin:auto 1.2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+ .fa-star{
+    color: rgb(110, 110, 110);
+}
+.fa-star:hover{
+    color: rgb(235, 219, 0);
+}
+.fa-trash{
+    color: rgb(204, 7, 7);
+}
+.buttons li button .fa-edit{
+    color: rgb(0, 99, 230);
+}
+
+
+@media screen and (max-width: 700px){
+    body{
+        background-color: #fff;
+        background-image: unset;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 10000;
+    }
+    .checkmenu{
+        display: block;
+    }
+    .fa-bars{
+        font-size: 25px;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #474747;
+        color: white;
+        top: 63px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow-y: scroll;
+    }
+    nav ul li, .logOut{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+        line-height: 30px;
+
+    }
+    nav ul li:hover{
+        border-bottom: none;
+        color: rgb(192, 192, 192);
+    }
+    .login-link{
+        border: none;
+        background-color: none;
+        
+    }
+    .logOut{
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        padding: 10px 20px;
+        margin: 20px auto;
+        border-radius: 0px;
+        
+    }
+    .logOut:hover{
+        
+        color: #000;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    /*---second clm--*/
+    .clm2{
+        background-color: none;
+        height: 450px;
+        margin-top: 80px;
+        width: 100%;
+    }
+    .form-container{
+        box-shadow: none;
+    }
+    .form-inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .left-inputs{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 80px;
+        z-index: 1000;
+        color: rgb(211, 211, 211);
+    }
+    .right-inputs{
+        background-color: rgb(22, 22, 22);
+        color: rgb(211, 211, 211);
+        position: absolute;
+        top: 160px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        padding-top: 120px;
+    }
+    .input-photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-photo img{
+        width: 120px;
+        height: 120px;
+    }
+    input{
+        color: rgb(211, 211, 211);
+    }
+    /*-----contacts sur col3----*/
+    .clm3{
+        margin-top: 200px;
+        background-color: #eeeeee;;
+    }
+    .clm3 h3{
+        font-size: 21px;
+        padding: 1rem;
+    }
+    .contact-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto;
+        grid-gap: 0.4rem 0.4rem;
+        justify-items: center;
+        align-content: center;
+    }
+    .card{
+        width: 180px;
+        height: 230px;
+        margin: 0.4rem;
+        box-shadow: 0px 7px 7px #9b9999;
+    }
+    /*card design-----*/
+    .photoContact{
+        height: 4.7rem;
+        padding-top: 0.4rem;
+    }
+    .photoContact img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .head-name li{
+        font-size: 16px;
+    }
+    .middle li{
+        font-size: 12px;
+    }
+    .buttons li button{
+        margin:auto 0.8rem;
+    }
+    
+    
+}

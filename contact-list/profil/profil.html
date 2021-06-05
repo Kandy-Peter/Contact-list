@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profil</title>
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+</head>
+<body>
+        <header>
+            <div class="clm container-row">
+                <!--headrer s1-->
+                
+                <div class="logo">
+                <h1>TouchApp</h1>
+                </div>
+                
+                <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkmenu"><i class="fas fa-bars"></i></label>
+                <ul>
+                    
+                    <a href="../index.html"><li><i class="fas fa-home"></i>Home</li></a>
+                    <a href="../about/about.html"><li><i class="fas fa-users"></i>About</li></a>
+                    <a href="profil.html"><li><i class="fas fa-user"></i>Profil</li></a>
+                    <a href="../login/login.html" class="login-link">login</a>
+                    
+                    <a href='#' class="logOut" id="logOut">Log Out</a>
+                </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <section>
+            <div class="clm container">
+                <div class="userprofil">
+                    <div class="profil-photo">
+                        <img id="photo" src="../image/default-profil.jpg">
+                        <input type="file" accept="image/*" name="image" id="file" 
+                            multiple="false">
+                        <label for="file" id="upload"><i class="fas fa-edit"></i></label>
+                        
+                    </div>
+                </div>
+                <div class="userinfo">
+                    <h2>Profil details</h2>
+                    <form>
+                        <div class="id name">
+                            <label for="profilName"><i class="fas fa-user"></i></label>
+                            <input type="text" id="profilName" placeholder="full name">
+                        </div>
+                        <div class="id userphone">
+                            <label for="profilPhone"><i class="fas fa-phone"></i></label>
+                            <input type="text" id="profilPhone" placeholder="phone number">
+                        </div>
+                        <div class="id mail" >
+                            <label for="profilMail"><i class="fas fa-envelope"></i></label>
+                            <input type="text" id="profilMail" placeholder="adress mail">
+                        </div>
+                        <div class="id adress">
+                            <label for="profilAdress"><i class="fas fa-map-marker-alt"></i></label>
+                            <input type="text" id="profilAdress" placeholder="Adress">
+                        </div>
+                        <div  class="update-save">
+                            <button id="updateBtn" class="editBtn"><i class="fas fa-trash">Delete account</i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+                
+            </div>
+        </section>
+    <script src="profil.js"></script>
+</body>
+</html>

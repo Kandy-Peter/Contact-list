@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+</head>
+<body>
+      <div class="clm-header">
+        <div class="nav-bar">
+          <h1>TouchApp</h1>
+        </div>
+        <div class="main">
+          <div class="container">
+            <div class="signup">Sign Up</div>
+            <div class="login">Log In</div>
+            
+             <div class="signup-form">
+               <form action="../index.html" onsubmit="signUp()">
+                <input type="text" placeholder="Username" name="name" class="input" required><br />
+                <input type="text" placeholder="Email Address" class="input" required><br />
+
+                <input type="password" placeholder="Password" name="password" class="input" required><br />
+                <button class="btn first-btn" type="submit">Create account</button>
+               </form>
+             </div>
+            
+            <div class="login-form">
+              <form action="../index.html" onsubmit="logIn()">
+                <input type="text" placeholder="Email Address" class="input" required><br />
+                <input type="password" placeholder="Password" class="input"><br />
+                <button class="btn second-btn" type="submit">Log in</button>
+                <span><a href="#">forgot password ?</a></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="login.js"></script>
+</body>
+</html>

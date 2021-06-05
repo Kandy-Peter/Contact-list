@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+body{
+    background-image: url("../image/background_img.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/*---header---*/
+header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    box-shadow:  2px 3px 3px rgba(129, 129, 129, 0.74);
+}
+.clm{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+}
+.container-row{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 10px;
+}
+.logo h1{
+    font-size: 40px;
+    font-family: 'New Rocker', cursive;
+}
+nav ul li{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 14px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+nav ul li:hover{
+    font-size: 18px;
+    border-bottom: 4px solid #000;
+    transition: .6s;
+}
+nav ul a{
+    color: #000;
+    padding: 14p;
+}
+nav ul a:hover .links{
+    display: block;
+}
+.clm1{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .fas{
+    margin-right: 5px;
+}
+.login-link{
+    background-color: #fff;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 8px 28px;
+   margin-left: 10px; 
+   margin-right: 10px;
+   border: 2px solid#000;
+}
+.login-link:hover{
+    background-color: #000;
+    color: #fff;
+}
+.logOut{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+   margin: 0 10px;
+}
+.logOut:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000
+}
+.checkmenu{
+    font-size: 40px;
+    color: #000;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*---section---*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-row{
+    width: 80%;
+    height: 700px;
+    margin: 40px;
+    display: flex;box-shadow: 3px 3px 3px #474747;
+}
+.abt-me{
+    width: 300px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 20px;
+}
+    .my_profil{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+        img{
+            width: 100%;
+            height: 100%;
+            }
+    .my_all{
+        flex: 1;
+        color: #969696;
+    }
+/*----circular progress---*/
+    .skills{
+        position: relative;
+        display: inline-block;
+        width: 4em;
+        height: 4rem;
+        margin: 0.4rem;
+        border: 5px solid rgb(255, 72, 0);
+        text-align: center;
+        border-radius: 50%;
+        border-bottom-color: #000;
+        border-right-color: #000;
+        border-top-color: #000;
+        box-shadow: 0 0 5px #474747;
+    }
+    .skills:nth-child(2){
+        border-left-color:rgb(255, 251, 0);
+        border-top-color: rgb(255, 251, 0);
+        border-right-color:rgb(0, 0, 0);
+        border-bottom-color: #000;
+    }
+    .skills:nth-child(3){
+        border-left-color:rgb(23, 197, 0);
+        border-top-color: rgb(23, 197, 0);
+        border-right-color:rgb(23, 197, 0);
+        border-bottom-color: #000;
+    }
+    span{
+        font-size: 10px;
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+    }
+    .skills-level{
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
+    }
+/*---end--*/
+    .info{
+        width: 100%;
+        border-bottom: 1px dashed #474747;
+        padding-bottom: 1.4rem;
+        padding-top: 1rem;
+    }
+    .info:last-child{
+        border-bottom: none;
+        padding-bottom: 0.7rem;
+        padding-top: 0.7rem;
+        height: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-1 ul li{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .info-2 ul li{
+        list-style-type: circle;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .info-4 a i{
+        color: #969696;
+        font-size: 24px;
+        margin: auto 0.8rem;
+        padding-top: 0.7rem;
+    }
+    .info-4 a i:hover{
+        color: #fff;
+        font-size: 28;
+    }
+
+/*---about the challenge--*/
+.abt-project{
+    background-color: rgba(255, 255, 255, 0.589);
+    flex: 1;
+    color: #1f1f1f;
+    height: 100%;
+    overflow: scroll;
+    padding: 2rem;
+}
+.abt-project::-webkit-scrollbar{
+    display: none;
+}
+.abt-project {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+    .abt-project h2{
+        text-align: center;
+        margin-bottom: 18px;
+        font-size: 27px;
+    }
+    h4{
+        font-size: 18px;
+        text-decoration: underline #1f1f1f;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+    p, ol{
+        margin-left: 2rem;
+    }
+    p, ol li, em{
+        font-size: 14px;
+    }
+    .abt-project ol li{
+        list-style-type:decimal;
+    }
+
+
+      
+@media screen and (max-width: 950px){
+    body{
+        background-repeat: repeat;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .checkmenu{
+        display: block;
+    }
+    .fa-bars{
+        font-size: 25px;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #474747;
+        color: white;
+        top: 63px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow: scroll;
+    }
+    .nav ul::-webkit-scrollbar{
+        display: none;
+    }
+    nav ul li, .logOut{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+        line-height: 30px;
+
+    }
+    nav ul li:hover{
+        border-bottom: none;
+        color: rgb(192, 192, 192);
+    }
+    .login-link{
+        border: none;
+        background-color: none;
+        
+    }
+    .logOut{
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        padding: 10px 20px;
+        margin: 20px auto;
+        border-radius: 0px;
+        
+    }
+    .logOut:hover{
+        
+        color: #000;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    /*-----section----*/
+    section{
+        width: 100%;
+    }
+    .section-row{
+        width: 100%;
+        margin: 0px;
+        margin-top: 90px;
+    }
+    .abt-me{
+        width: 220px;
+        padding: 10px;
+    }
+    .my_profil{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+        img{
+            width: 90%;
+            height: 90%;
+            }
+    .my_all{
+        flex: 1;
+        color: #969696;
+    }
+/*----circular progress---*/
+    .skills{
+        width: 2.7rem;
+        height: 2.7rem;
+        margin: auto 0.3rem;
+    }
+    span{
+        font-size: 7px;
+        bottom: 1px;
+    }
+    .skills-level{
+        top: 11%;
+        font-size: 12px;
+    }
+    /*info-----*/
+    
+    .info-1 ul li{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .info-2 ul li{
+        margin-left: 17px;
+        font-size: 13px;
+    }
+    .info-4 a i{
+        font-size: 20px;
+        margin: auto 0.5rem;
+        padding-top: 0.8rem;
+    }
+    .info-4 a i:hover{
+        color: #fff;
+        font-size: 23px;
+
+    }
+    .info:last-child{
+        padding: 18px;
+        height: 1rem;
+    }
+    /*----about-------*/
+    .abt-project{
+        
+        padding: 1rem;
+    }
+        .abt-project h2{
+            font-size: 22px;
+        }
+        h4{
+            font-size: 14px;
+        }
+        p, ol{
+            margin-left: 1rem;
+        }
+        p, ol li, em{
+            font-size: 12px;
+        }
+    
+}
