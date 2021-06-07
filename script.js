@@ -31,12 +31,13 @@ let listContacts = function () {
     }
 }
 
-let favoriteContact = function(i) {
+let favoriteContact = function() {
     favoriteContact.addEventListenner('click', changeColor);
     
     function changeColor(){
         this.style.color = "yellow";
     }
+    listContacts();
 }
 let addNewContact = function () {
     let photo = document.getElementById('inputFile').value;
